@@ -9,23 +9,16 @@ public class ArrayIndex {
 		
 		List list = new ArrayList();
 		list.add("abc");
+		list.add("jo");
 		list.add(new A());
 		list.add(new B());
 		list.add(new ArrayIndex());
 		
-		int size=list.size();
-		System.out.println(size);
-		System.out.println(list.get(4));
-		
-		
-		String s=(String)list.get(0);
-		System.out.println(s);
-		
-		A s2=(A)list.get(1);
-		System.out.println(s2);
-		
-		B s1= (B)list.get(2);
-		System.out.println(s1);
+		for(int i=0; i<list.size(); i++)
+		{
+			String s= (String)list.get(i);
+			System.out.println(s);
+		}
 		
 		
 		
